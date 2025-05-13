@@ -26,7 +26,7 @@
 # while i<10:
 # print(i, end=" ")
 # i+=1
-import random
+# import random
 
 # все целые числа в обратном порядке
 # a=int(input("начало диапазона: "))
@@ -122,30 +122,124 @@ import random
 # if (pr==5):
 #     print("вы проиграли")
 
-import random
-a=random.randint(1,99)
-pr=0
-flag = True
-while flag:
-    while pr < 5:
-     n = int(input("введите число: "))
-     if n > a:
-         print("заданное число меньше")
-     elif n < a:
-         print("заданное число больше")
-     else:
-         print("вы угадали")
-         pr = 10
-if (pr==5):
-    print("вы проиграли")
-input("хотите сыграть снова?")
-if "да":
-    flag=True
-else:
-    flag = False
-    print("игра окончена")
+# import random
+# a=random.randint(1,99)
+# pr=0
+# flag = True
+# while flag:
+#     while pr < 5:
+#      n = int(input("введите число: "))
+#      if n > a:
+#          print("заданное число меньше")
+#      elif n < a:
+#          print("заданное число больше")
+#      else:
+#          print("вы угадали")
+#          pr = 10
+# if (pr==5):
+#     print("вы проиграли")
+# input("хотите сыграть снова?")
+# if "да":
+#     flag=True
+# else:
+#     flag = False
+#     print("игра окончена")
 
+# списки
 
+# list = [2,3,4]
+# print(list)
+# list.append(6)
+# print(list)
+# list.clear()
+# print(list)
 
+# list = [2,3,4]
+# print(list)
+# a=input ("добавить значение ")
+# list.append(a)
+# print(list)
+# print("очистить список")
+# list.clear()
+# print(list)
 
+# list = []
+# print('''
+# 1. добавить значение
+# 2. очистить список
+# 3. вывести список
+# 4. сортировка списка
+# 5. количество элементов в списке
+# 6. удаление элемента с конкретной позиции
+# 7. удаление конкретного элемента значения
+# 8. добавление элемента в конкретную позицию
+# 9. разворот списа в обратном порядке
+# 10.выход
+# ''')
+# valid_check = True
+# while valid_check:
+#     check = int (input("выберите дейстиве: "))
+#     if check<1 or check>10:
+#         print("incorrect")
+#     else:
+#         break
+#
+#     if check == 1:
+#         num = int(input("введите значение: "))
+#         list.append(num)
+#     elif check == 2:
+#         list.clear()
+#         print("список очищен")
+#     elif check == 3:
+#         print(list)
+#     elif check == 4:
+#         list.sort()
+#         print("писок отсортирован")
+#     elif check == 5:
+#         print("длина спиcка: ", len(list))
+#     elif check == 6:
+#         z = int(input("введите позицию"))
+#         if (z < 0 or z > len(list)):
+#             print("incorrect")
+#         else: list.pop(z)
+#     elif check == 7:
+#         a = int(input("введите элемент: "))
+#         list.remove(a)
+#         except:
+#         print("данное значение отсутствует")
+#     elif check == 8:
+#         i = int(input("введите элемент: "))
+#         x = int(input("введите позицию: "))
+#         if (i < 0 or i > len(list)):
+#             print("incorrect")
+#         else:
+#             list.insert(i, x)
+#     elif check == 9:
+#         list.reverse()
+#         print("список развернут")
+#     elif check == 10:
+#         exit()
 
+# line = "2 3 4 5 6 7"
+# ll = list(line)
+# ll.reverse()
+# list= ""
+# for i in ll:
+#     print(line)
+
+# line = str(input("введите строку: ")) ???
+# line2 = ""
+# count_digit = 0
+# for i in line:
+#     if i.isdigit():
+#         count_digit+=1
+#     print(count_digit)
+#     if i.isalpha():
+#         count_digit+=1
+#     print(count_digit)
+
+line = str(input("введите строку: "))
+search = str(input("введите слово для поиска: "))
+change = str(input("введите слово для замены: "))
+line.replace(search, change)
+print(line)
